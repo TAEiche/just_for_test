@@ -1,0 +1,16 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(17,GPIO.OUT)
+print ("LED 1 on")
+GPIO.output(17,GPIO.HIGH)
+time.sleep(1)
+print ("LED 1 off")
+GPIO.output(17,GPIO.LOW) 
+GPIO.setup(27,GPIO.OUT)
+print ("LED 2 on")
+GPIO.output(27,GPIO.HIGH)
+time.sleep(1)
+print ("LED 2 off")
+GPIO.output(27,GPIO.LOW)
